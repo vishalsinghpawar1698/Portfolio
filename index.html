@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" href="circle-user-solid.svg" type="Image/x=icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, my name is </p>
+                <h1> <span>Vishal Singh Pawar</span> <br>I'm a <span>Web Developer Intern</span></h1>
+                <a href="#" type="button" class="cta">WEB DEVELOPER</a>
+            </div>
+        </div>
+    </div>  
+
+    <!-- About Section -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1"> 
+                    <img src="user.png" alt="User Image">
+                </div>
+                <div class="About-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>As a Web Development Intern enthusiast with a B.Tech in computer science and a Internship from Shadowfox, I have acquired various skills like Html, Css, Javascript, and Bootstrap. I have demonstrated my ability to apply data-driven solutions to different business problems and deliver actionable insights through my projects and certifications. I am looking for a challenging and rewarding role where I can utilize my skills and knowledge in the field of Web Development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Internship')">Internship</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Oops</span><br>Java, C++</li>
+                            <li><span>Languages</span><br>Web Development  - HTML,CSS And Javascript(Basics)</li>
+                            <li><span>Databases</span><br>Sql</li>
+                            <li><span>Tools</span><br>Azure Fundamentals <br>Hadoop
+                            </li>
+                            <li><span>MS Office</span> <br> (MS Word, MS Excel, MS PowerPoint)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2023</span><br><br>G L Bajaj Institute Of Technology And Management Noida<br>B.Tech(Computer science And Engineering)<br>Percentage : 80%</li>
+                            <li><span>2017-2020</span><br>Border Security Force Polytechnic New Delhi<br>Diploma (Computer Engineering)<br>Percentage : 70%</li>
+                            <li><span>2013</span><br>Kendriya Vidayalaya No.3 Army Cantt Gandhinagar Gujarat<br>HighSchool<br>Percentage : 74%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Internship">
+                        <ul>
+                            <li><span><h3>1. Web Development Inten At Shadowfox </h3></span><br><h2></h2> <br><h2>2. Java Intern At Rapidcode Technologies</h2><br><h2></h2></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Services -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-free-code-camp"></i>
+                    <h2>Website Designing</h2>
+                    <p>A Web Design service produces the look, structure along with features of an online site. The position will involve understanding Freelance Website Designer. We are providing the best Freelance service on the website. PHP Website Development,  and web designing.</p>
+                    <a href="https://github.com/Sakthi-143/My_Visions/blob/main/README.md">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Maintenance Services</h2>
+                    <p>The website requires consistent refinement, change, upgradation, and updation so it ought not to look old. Without predictable and normal updates, the outline of your site turns out to be simply a static handout which does a foul play to the developing and dynamic nature of your business.</p>
+                    <a href="https://github.com/Sakthi-143/My_Visions/blob/main/README.md">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrows-to-dot"></i>
+                    <h2>Payment Gateway Integration</h2>
+                    <p>Payment Gateway Integration Services or Online Payment Processing is a way of receiving payments from your customers on your website. If you are an existing e-commerce store owner or planning to launch e-commerce enabled store</p>
+                    <a href="https://github.com/Sakthi-143/My_Visions/blob/main/README.md">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="Work">
+                    <img src="3.png" alt="work 1">
+                    <div class="layer">
+                        <h3>Pawar Fitness Website</h3>
+                        <p>This is a Fitness Website which contains a all Schedule Time Table.</p>
+                        <a href="https://github.com/vishalsinghpawar1698/pawarfitness.github.io"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="2.jpeg" alt="work 2">
+                    <div class="layer">
+                        <h3> Ummed Foundation</h3>
+                        <p> A Ngo Website </p>
+                        <a href="https://github.com/vishalsinghpawar1698/pawarfitness.github.io"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="3.png" alt="work 3">
+                    <div class="layer">
+                        <h3> Web Development </h3>
+                        <p> Creating a Websites and Managing a Web Handles. </p>
+                         <a href="https://github.com/vishalsinghpawar1698/pawarfitness.github.io"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/vishalsinghpawar1698/pawarfitness.github.io"" class="button">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <section id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>vishalsinghpawar1698@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+91) - 8868932279</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vishal-singh-pawar-1060ba18b/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/vishalsinghpawar1698"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-singh-pawar-1060ba18b/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-singh-pawar-1060ba18b/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-singh-pawar-1060ba18b/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1h6DfrbyRMvic68PKalWX4oNdT81YmhSr/view?usp=drive_link" download class="button button2">Download CV</a>
+                </div>
+                <div class="col-lg-6 contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        <textarea class="form-control" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vishal Singh Pawar 2024 All rights reserved | Made with <i class="fa-solid fa-heart"></i> by own Website</p>
+        </div>
+    </section>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx8p1GJ7WZypvZXBRA8WpeX6b0ugE3_pktxVzm7VniwpWZFmEz9CXb44-dkNI-ssOXJ/exec';
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form)
+            })
+            .then(response => {
+                console.log('Success!', response);
+                document.getElementById('msg').innerText = 'Message sent  successfully!';
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                document.getElementById('msg').innerText = 'Error sent Message. Please try again later.';
+            });
+        });
+    </script>
+    
+</body>
+</html>
